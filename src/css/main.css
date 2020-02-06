@@ -61,11 +61,12 @@ body {
   color: #FFF;
 }
 h1 {
-  font-family: 'Rationale', sans-serif;
+  font-family: 'Girassol', cursive;
+  /* font-family: 'Rationale', sans-serif; */
   font-size: 128px; /* 8em */
   margin: 2.2em auto 0.20em auto;
   text-align: center;
-  color: DeepSkyBlue;
+  color: MediumBlue;
 }
 h2 {
   padding: 0px;
