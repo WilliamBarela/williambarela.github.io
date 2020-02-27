@@ -1,8 +1,33 @@
-h1,h2,h3,h4,h5,h6 {
-font-family: 'Big Shoulders Display', sans-serif;
+h1,h2,h3,h4,h5,h6,legend {
+font-family: 'Big Shoulders Display';
 }
 
-/* https://www.w3schools.com/html/html5_semantic_elements.asp */
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'News Cycle', sans-serif;
-font-family: 'Assistant', sans-serif;
+/* semantic html */
+article,aside,details,
+figcaption,figure,
+footer,header,main,
+mark,nav,section,
+summary,time{
+  font-family: 'Roboto';
+}
+
+/* block-level elements */
+address,blockquote,canvas,
+dd,div,dl,dt,fieldset,form,
+hr,li,noscript,ol,p,table,
+tfoot,ul,video,option,optgroup{
+  font-family: 'Roboto';
+}
+
+/* inline elements */
+a,abbr,b,bdo,br,
+button,cite,dfn,i,img,input,
+label,map,object,output,q,
+select,small,span, strong,
+sub,sup,textarea{
+  font-family: 'Roboto';
+}
+
+/* addition elements, no change */
+code,em,kbd,pre,samp,var{
+}
