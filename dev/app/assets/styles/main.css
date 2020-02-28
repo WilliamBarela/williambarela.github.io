@@ -3,12 +3,13 @@ font-family: 'Big Shoulders Display';
 }
 
 /* semantic html */
-article,aside,details,
+article,aside,body,details,
 figcaption,figure,
 footer,header,main,
 mark,nav,section,
 summary,time{
   font-family: 'Roboto';
+  margin:0;
 }
 
 /* block-level elements */
@@ -30,4 +31,42 @@ sub,sup,textarea{
 
 /* addition elements, no change */
 code,em,kbd,pre,samp,var{
+}
+
+header{
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  transition: top 0.3s
+}
+
+header nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header nav ul li {
+  display: inline-block;
+  color: white;
+}
+
+header nav ul li a{
+  display: inline-block;
+  text-align: center;
+  padding: 19px 30px;
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav ul li:hover{
+  background-color: white;
+  color: black;
+}
+
+main{
+  margin-top: 60px;
 }
