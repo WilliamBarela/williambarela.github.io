@@ -1,3 +1,16 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.rock {
+  background-image: url("../images/rock-1920x1080.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1,h2,h3,h4,h5,h6,legend {
 font-family: 'Big Shoulders Display';
 }
