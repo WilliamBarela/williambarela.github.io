@@ -40,4 +40,11 @@
   --c230-2x2-2: rgba(228,145,67,1);
   --c230-2x2-3: rgba(142,67,12,1);
   --c230-2x2-4: rgba(92,77,44,1);
+
+  /* Zumbido by silverbirds: https://www.colourlovers.com/palette/984729/Zumbido */
+  --czum-0: rgba(76,150,99,1);
+  --czum-1: rgba(151,178,125,1);
+  --czum-2: rgba(255,243,184,1);
+  --czum-3: rgba(199,229,83,1);
+  --czum-4: rgba(59,52,42,1);
 }
