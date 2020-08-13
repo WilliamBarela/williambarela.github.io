@@ -13,3 +13,16 @@
     color: var(--c146-3x4-4);
     background-color: var(--c146-3x4-0);
 }
+
+body {
+  padding: 7vw 7vw;
+}
+
+#top-nav {
+  height: 7rem;
+  margin-bottom: 7vw;
+}
+
+#wb-logo {
+  height: 100%;
+}
