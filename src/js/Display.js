@@ -6,6 +6,7 @@ class Display {
   get buildTopNav() {
     const header = document.querySelector("header");
     const nav = document.createElement("nav");
+    const loader = document.querySelector(".loader");
 
     nav.innerHTML = `
       <a href="/"><img src="/img/wb-light.svg" alt="William Barela Logo" id="wb-logo"></a>
@@ -16,6 +17,8 @@ class Display {
     `
     nav.id = "top-nav";
     header.appendChild(nav);
+
+    loader.style.display = "none";
 
     return nav
   }

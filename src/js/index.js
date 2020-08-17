@@ -1,3 +1,5 @@
 import Display from './Display.js';
 
-const display = new Display;
+document.addEventListener("DOMContentLoaded", () => {
+  const display = new Display;
+});
