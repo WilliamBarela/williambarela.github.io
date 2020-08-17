@@ -55,7 +55,7 @@ class Display {
     const quote = document.createElement("h1");
     const detail = document.createElement("p");
 
-    image.src = "/img/william-barela.jpg";
+    image.src = "/img/william-barela-900.jpg";
     image.classList.add("hero");
     quote.innerText = "William Barela is a Software Developer looking to change the world, one app at a time.";
     detail.innerHTML = `William Barela is a <a href=''>Software Developer</a> looking to change the world, one app at a time.
