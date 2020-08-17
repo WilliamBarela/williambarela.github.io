@@ -51,12 +51,17 @@ class Display {
   }
 
   get addHero() {
+    const image = document.createElement("img");
     const quote = document.createElement("h1");
     const detail = document.createElement("p");
 
+    image.src = "/img/william-barela.jpg";
+    image.classList.add("hero");
     quote.innerText = "William Barela is a Software Developer looking to change the world, one app at a time.";
-    detail.innerHTML = "William Barela is a <a href=''>Software Developer</a> looking to change the world, one app at a time."
+    detail.innerHTML = `William Barela is a <a href=''>Software Developer</a> looking to change the world, one app at a time.
+    Amet quas illo accusantium culpa rerum. Vitae facilis perspiciatis sed voluptas nesciunt Eos eligendi aperiam vero repellat quis. Laborum quas soluta qui ipsum architecto. Architecto magni ad quia quibusdam unde.`
 
+    this.main.appendChild(image);
     this.main.appendChild(quote);
     this.main.appendChild(detail);
   }
