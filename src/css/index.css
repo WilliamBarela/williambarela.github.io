@@ -47,9 +47,34 @@ a #hamburger {
   width: 10vw;
 }
 
-.menu-text {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-size: 130%;
-  color: rgba(255,255,255,0.7);
+a #close {
+  height: 90%;
+  width: 10vw;
+  z-index: 5;
+  background-color: rgba(0,0,0,0.0);
+}
+
+#primary-navegation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: 4;
+  font-size: 500%;
+  background-color: rgba(0,0,0,0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.primary-navegation-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.primary-navegation-content li a {
+  background-color: rgba(0,0,0,0.7);
 }

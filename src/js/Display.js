@@ -10,9 +10,17 @@ class Display {
 
     nav.innerHTML = `
       <a href="/"><img src="/img/wb-light.svg" alt="William Barela Logo" id="wb-logo"></a>
-      <ul id="primary-navegation"></ul>
+      <div id="primary-navegation">
+        <ul class="primary-navegation-content">
+          <li><a href="">about</a></li>
+          <li><a href="">projects</a></li>
+          <li><a href="">skills</a></li>
+          <li><a href="">blog</a></li>
+        </ul>
+      </div>
       <a href="#">
         <img src="/img/hamburger-thin.svg" alt="Main Menu" id="hamburger">
+        <img src="/img/close.svg" alt="Close" id="close" style="display: none">
       </a>
     `
     nav.id = "top-nav";
@@ -23,7 +31,22 @@ class Display {
     return nav
   }
 
-  get addNavListener () {
+  get addNavListener() {
+    const hamburger = this.topNav.querySelector("#hamburger");
+    const close = this.topNav.querySelector("#close");
+    const primaryNav = this.topNav.querySelector("#primary-navegation");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.style.display = "none";
+      close.style.display = "block";
+      primaryNav.style.width = "100%";
+    })
+
+    close.addEventListener("click", () => {
+      close.style.display = "none";
+      primaryNav.style.width = "0%";
+      hamburger.style.display = "block";
+    })
   }
 }
 
