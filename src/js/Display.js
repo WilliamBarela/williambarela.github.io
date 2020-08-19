@@ -57,9 +57,11 @@ class Display {
 
     image.src = "/img/william-barela-900.jpg";
     image.classList.add("hero");
-    quote.innerText = "William Barela is a Software Developer looking to change the world, one app at a time.";
-    detail.innerHTML = `William Barela is a <a href=''>Software Developer</a> looking to change the world, one app at a time.
-    Amet quas illo accusantium culpa rerum. Vitae facilis perspiciatis sed voluptas nesciunt Eos eligendi aperiam vero repellat quis. Laborum quas soluta qui ipsum architecto. Architecto magni ad quia quibusdam unde.`
+    quote.innerText = "Hi! I'm William.";
+    detail.innerHTML = `
+      I'm a Full Stack Software Engineer and a former Linux System Admin.
+      Thanks for stopping by. This page is currently under construction, but is soon to be fully functional.
+    `
 
     this.main.appendChild(image);
     this.main.appendChild(quote);
