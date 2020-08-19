@@ -25,12 +25,22 @@
   |*                                             *|
   \***********************************************/
 
+  --h00-font-size: 3.3302rem;
+  --h0-font-size: 2.6180rem;
   --h1-font-size: 2.0582rem;
   --h2-font-size: 1.6180rem;
   --h3-font-size: 1.2720rem;
   --h4-font-size: 1.000rem;
   --h5-font-size: 0.7862rem;
   --h6-font-size: 0.6180rem;
+  --h7-font-size: 0.4859rem;
+  --h8-font-size: 0.3820rem;
+  --h9-font-size: 0.3003rem;
+  --h10-font-size: 0.2361rem;
+  --h11-font-size: 0.1856rem;
+  --h12-font-size: 0.1459rem;
+  --h13-font-size: 0.1147rem;
+  --h14-font-size: 0.0902rem;
 
   /* margins */
   --vertical-bottom-margin: 2rem;
@@ -44,6 +54,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: var(--c146-3x4-0); 
 }
 
 a {
@@ -69,7 +80,7 @@ body {
 }
 
 #wb-logo {
-  height: 89%;
+  height: 90%;
   width: 10vw;
 }
 
@@ -128,15 +139,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-  color: var(--c146-3x4-0); 
   font-weight: 300;
   font-size: var(--h4-font-size);
+  line-height: var(--h2-font-size);
 }
 
 p a {
   color: var(--c146-3x4-3);
   border-style: none none solid none;
-  border-width: 5px;
+  border-width: var(--h13-font-size);
   border-color: var(--c146-3x4-4);
 }
 
@@ -144,6 +155,7 @@ h1 {
   font-size: var(--h1-font-size);
   font-weight: 400;
   margin-bottom: var(--h1-mobile-margin-bottom);
+  line-height: var(--h0-font-size);
 }
 
 .hero {
