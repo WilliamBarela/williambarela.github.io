@@ -51,21 +51,29 @@ class Display {
   }
 
   get addHero() {
+    const article = document.createElement("article");
+    const section = document.createElement("section");
     const image = document.createElement("img");
     const quote = document.createElement("h1");
     const detail = document.createElement("p");
 
+    article.classList.add("hero");
+    image.classList.add("hero--img");
+    section.classList.add("hero--text");
+
     image.src = "/img/william-barela-900.jpg";
-    image.classList.add("hero");
     quote.innerText = "Hi! I'm William.";
     detail.innerHTML = `
       I'm a Full Stack Software Engineer and a former Linux System Admin.
       Thanks for stopping by. This page is currently under construction, but is soon to be fully functional.
     `
+    section.appendChild(quote);
+    section.appendChild(detail);
 
-    this.main.appendChild(image);
-    this.main.appendChild(quote);
-    this.main.appendChild(detail);
+    article.appendChild(image);
+    article.appendChild(section);
+
+    this.main.appendChild(article);
   }
 }
 
