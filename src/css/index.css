@@ -178,10 +178,15 @@ h4 {
   line-height: var(--h3-font-size);
 }
 
-.hero--img {
+.hero--svg-container {
+  min-width: 40%;
+}
+
+.hero--svg {
   display: block;
-  width: 100%;
   height: auto;
+
+  width: 100%;
   border-radius: 25px;
   margin: auto;
   margin-top: var(--h4-font-size);
@@ -211,7 +216,7 @@ h4 {
   }
 }
 
-@media screen and (min-width: 38.8em) {
+@media screen and (min-width: 38.8em) and (orientation: landscape) {
   :root {
     font-size: 114.59%;
   }
@@ -219,6 +224,21 @@ h4 {
   body {
     padding-left: var(--h-2-font-size);
     padding-right: var(--h-2-font-size);
+  }
+
+  .hero {
+    display: flex;
+  }
+
+  .hero--svg {
+    padding-right: var(--h1-font-size);
+  }
+  
+  .hero--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -254,26 +274,11 @@ h4 {
     padding-right: var(--h-5-font-size);
   }
 
-  .hero {
-    display: flex;
-  }
-
-  .hero--img {
-    padding-right: var(--h1-font-size);
-  }
-  
-  .hero--text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  
   .hero--text h1 {
     font-size: var(--h-1-font-size);
     margin-top: var(--h1-font-size);
     margin-bottom: var(--h3-font-size);
-    line-height: var(--h0-font-size);
+    line-height: var(--h-2-font-size);
   }
 
   .hero--text p {

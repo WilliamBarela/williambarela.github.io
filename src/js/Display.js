@@ -53,15 +53,19 @@ class Display {
   get addHero() {
     const article = document.createElement("article");
     const section = document.createElement("section");
-    const image = document.createElement("img");
+    const svg = document.createElement("div");
     const quote = document.createElement("h1");
     const detail = document.createElement("p");
 
     article.classList.add("hero");
-    image.classList.add("hero--img");
+    svg.classList.add("hero--svg-container");
     section.classList.add("hero--text");
 
-    image.src = "/img/william-barela-900.jpg";
+    svg.innerHTML = `
+      <svg viewBox="50,0,750,900" class="hero--svg">
+        <image href="/img/william-barela-900.jpg" width="900" height="900"></image>
+      </svg>
+    `;
     quote.innerText = "Hi! I'm William.";
     detail.innerHTML = `
       I'm a Full Stack Software Engineer and a former Linux System Admin.
@@ -70,7 +74,7 @@ class Display {
     section.appendChild(quote);
     section.appendChild(detail);
 
-    article.appendChild(image);
+    article.appendChild(svg);
     article.appendChild(section);
 
     this.main.appendChild(article);
