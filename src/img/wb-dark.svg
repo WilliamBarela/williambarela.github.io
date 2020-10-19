@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" class="wb-logo" fill="#5100ba">
+  <g transform="translate(-0.00005 1703)matrix(0.15 0 0 0.15 2233.5938 291.57504)">
+    <rect y="-13297.167" x="-14890.625" height="1999.9998" width="267.66107" />
+    <rect y="-13297.167" x="-14457.54" height="1566.9154" width="267.66107" />
+    <rect y="-12864.083" x="-14024.457" height="1133.8311" width="267.66101" />
+    <rect y="-12864.083" x="-13591.371" height="484.20401" width="700.74597" />
+    <rect y="-12214.456" x="-13591.371" height="484.20401" width="700.74597" />
+    <rect transform="rotate(-90)" y="-14457.54" x="11297.167" height="1566.915" width="267.66107" />
+    <rect transform="rotate(-90)" y="-14024.457" x="13029.506" height="1133.8311" width="267.66107" />
+  </g>
+</svg>
