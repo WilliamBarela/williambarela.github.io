@@ -63,7 +63,7 @@ class Header extends Component {
               <li><a href="">about</a></li>
               <li><a href="">projects</a></li>
               <li><a href="">skills</a></li>
-              <li><a href="">blog</a></li>
+              <li><a href="/devblog">blog</a></li>
             </ul>
           </div>
           <a href="#" onClick={this.handleMenuClick}>
